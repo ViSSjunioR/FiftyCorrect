@@ -17,8 +17,9 @@ public class LoginController {
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String validLogin(@ModelAttribute("user") User user) {
-		if(userService.validateUser(user)) System.out.println("true");
-		else System.out.println("false");
+		System.out.println("tai sao lai the");
+//		if(userService.validateUser(user)) System.out.println("true");
+//		else System.out.println("false");
 		return "home";
 	}
 	
